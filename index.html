@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北関東学院</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Kosugi+Maru&family=Shippori+Mincho:wght@400;800&display=swap" rel="stylesheet">
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+    <!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <!-- ローディング -->
+    <div class="loading" id="loading">
+        <iframe class="loading_frame" src="./loading/loading.html"></iframe>
+    </div>
+
+    <header>
+
+        <ul class="slider">
+            <li class="background1"></li>
+            <li class="background2"></li>
+            <li class="background3"></li>
+            <li class="background4"></li>
+            <li class="background5"></li>
+        </ul>
+
+        <img class="header_logo" src="./images/logo.png" alt="logo">
+        <nav>
+            <div class="header_res_menu"><span></span><span></span><span></span></div>
+            <ul>
+                <li><a href="#about">北関東学院とは</a></li>
+                <li><a href="#course">開講コース紹介</a></li>
+                <li><a href="#entry">お申込みについて</a></li>
+                <li><a href="#access">アクセス</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="header_caption">北関東学院はIT・WEB関連の仕事への就職を目指す<br>求職者のための職業訓練校です。</h3>
+
+        <div class="header_bottomarea">
+            <!-- モーダルが開く -->
+            <div class="header_colona">
+                <p>コロナ対策への<br>取り組み</p>
+            </div>
+            <!-- リンク -->
+            <div class="header_blog">
+                <a class="header_blog_contain" href="https://ameblo.jp/kps-sapporo/">講師陣ブログ</a>
+            </div>
+            <a class="header_hellowork" href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html" target="_blank"></a>
+        </div>
+
+        <!-- モーダルの中身 -->
+        <div class="header_modal_container">
+            <div class="modal_body">
+                <div class="modal_close">+</div>
+                <div class="modal_content">
+                    <h2>当校のコロナ対策について</h2>
+                    <img src="./images/covid_03.jpg" alt="covid">
+                    <p>当ホームページを閲覧いただきありがとうございます。<br>全国的にもコロナウイルスの収束が見えない中、皆様におかれましては 懸命に求職活動を続けていると思います。<br>当校では、感染拡大に できうる限りの注意を払いつつ再就職を目指すべく訓練を行っています。</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section_about" id="about">
+            <div class="section_header">
+                <h2>北関東学院とは</h2>
+            </div>
+                <div class="about_textbox">
+                    <div class="about_box">
+                        <img class=" js_fadeinIMG" src="./images/about_img_1.jpg" alt="KSbuilding">
+                        <p>北関東学院はハローワーク管轄のもとで企業が実施している求職者支援訓練（職業訓練）校です。<br>デジタル・IT関連の訓練を求職者向けに実施しており、ハローワークを通じてお申込みいただくことで、無料（別途教科書代要）で受講することができます。<br>当校でスキルアップを目指しながら、就職活動に取り組みませんか？
+                        </p>
+                    </div>
+                </div>
+                <div class="about_textbox">
+                    <div class="about_box reverse">
+                        <img class="js_fadeinIMG" src="./images/about_img_2.jpg" alt="studying">
+                        <p>当校ではIT・Web関連業界への就職を希望される方向けに３つのコースをご用意。未経験からでも希望の職種を目指せるようサポートいたします。<br>また、当校では職業訓練に加えて就職支援も実施。早期の再就職を支援いたします。
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section_course" id="course">
+            <div class="section_header">
+                <h2>開講コース</h2>
+            </div>
+
+            <div class="course_box">
+                <div class="course_box_content">
+                    <a href="#design">
+                        <img src="./images/design_img.jpg" alt="design">
+                        <div class="course_box_text">
+                            <p>ＷＥＢデザイン<br>クリエーター科</p>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="course_box_content">
+                    <a href="#frontend">
+                        <img src="./images/frontend_img.jpg" alt="frontend">
+                        <div class="course_box_text">
+                            <p>ＷＥＢフロントエンド<br>構築科</p>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="course_box_content">
+                    <a href="#program">
+                        <img src="./images/program_img.jpg" alt="program">
+                        <div class="course_box_text">
+                            <p>ＷＥＢプログラミング<br>デザイン科</p>                        
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="course_induction_box">
+                <a class="course_induction" href="#recruit">
+                開講中コースの情報はこちら
+                </a>
+            </div>
+
+            <div class="course_detail_box" id="design">
+                <div class="course_detail_header">
+                    <h3>WEBデザインクリエーター科</h3>
+                    <span class="js_fadeinIMG2"></span>
+                </div>
+                <div class="course_detail_imgs">
+                    <div class="course_detail_iconbox">
+                        <img src="./images/icons/adobe-illustrator.svg" alt="AI">
+                        <img src="./images/icons/adobe-photoshop.svg" alt="PS">
+                        <img src="./images/icons/html-5.svg" alt="html">
+                        <img src="./images/icons/css-3.svg" alt="css">
+                        <img src="./images/icons/wordpress-icon.svg" alt="wordpress-icon">
+                    </div>
+                    <img class="course_detail_image" src="./images/design_img.jpg" alt="design">
+                </div>
+                <div class="course_detail_caption">
+                    <span></span>
+                    <h4>学べる内容</h4>
+                    <p>Webデザインの基礎であるHTML・CSSに加え、現場で実際に使われているPhotoshop CC・ Illustrator CC・
+                    jQueryを活用・応用し、実践に即した制作技術を習得していただきます。</p>
+                </div>
+                <div class="course_detail_caption">
+                    <span></span>
+                    <h4>目指せる姿</h4>
+                    <p>この訓練を通じて、Web サイト制作という様々な業種で必要とされるスキルを身につけることができます。
+                    また、Web デザイナー、グラフィックデザイナーの資格取得を目指すことも可能です。</p>
+                </div>
+            </div>
+
+            <div class="course_detail_box" id="frontend">
+                <div class="course_detail_header">
+                    <h3>WEBフロントエンド構築科</h3>
+                    <span class="js_fadeinIMG2"></span>
+                </div>
+                <div class="course_detail_imgs">
+                    <div class="course_detail_iconbox">
+                        <img src="./images/icons/html-5.svg" alt="HTML">
+                        <img src="./images/icons/css-3.svg" alt="CSS">
+                        <img src="./images/icons/javascript.svg" alt="js">
+                        <img src="./images/icons/php.svg" alt="php">
+                        <img src="./images/icons/wordpress-icon.svg" alt="wordpress-icon">
+                    </div>
+                    <img class="course_detail_image" src="./images/frontend_img.jpg" alt="design">
+                </div>
+                <div class="course_detail_caption">
+                    <span></span>
+                    <h4>学べる内容</h4>
+                    <p>様々なブラウザ(InternetExplorer、FireFox、Chrome、Edge等)で動作する、JavaScript、PHP等の開発に関する実用的な知識と技能・技術を習得していただきます。</p>
+                </div>
+                <div class="course_detail_caption">
+                    <span></span>
+                    <h4>目指せる姿</h4>
+                    <p>フロントエンド業務におけるWEBプログラム、コーディング、データベース構築等、プログラミング関係の仕事に従事できるようになります。</p>
+                </div>
+            </div>
+
+            <div class="course_detail_box" id="program">
+                <div class="course_detail_header">
+                    <h3>WEBプログラミングデザイン科</h3>
+                    <span class="js_fadeinIMG2"></span>
+                </div>
+                <div class="course_detail_imgs">
+                    <div class="course_detail_iconbox">
+                        <img src="./images/icons/javascript.svg" alt="js">
+                        <img src="./images/icons/php.svg" alt="php">
+                        <img src="./images/icons/html-5.svg" alt="HTML">
+                        <img src="./images/icons/jquery.svg" alt="jquery">
+                        <img src="./images/icons/mysql.svg" alt="mysql">
+                    </div>
+                    <img class="course_detail_image" src="./images/program_img.jpg" alt="program">
+                </div>
+                <div class="course_detail_caption">
+                    <span></span>
+                    <h4>学べる内容</h4>
+                    <p>様々なブラウザ(InternetExplorer、FireFox、Chrome、Edge等)で動作する、JavaScript、PHP、MySQL等のアプリ開発に関する実用的な知識と技能・技術を習得していただきます。</p>
+                </div>
+                <div class="course_detail_caption">
+                    <span></span>
+                    <h4>目指せる姿</h4>
+                    <p>WEB制作を行う職場においてWEBプログラム、コーディング、データベース構築等、プログラミング関係の仕事に従事できるようになります。</p>
+                </div>
+            </div>
+
+            <div class="course_detail_box" id="recruit">
+                <div class="course_detail_header">
+                    <h3>開講コース情報</h3>
+                    <span class="js_fadeinIMG2"></span>
+                </div>
+
+                <div class="course_detail_recruitbox">
+                    <dl class="course_detail_recruitarea">
+                        <dt>12月開講WEBデザインクリエーター科</dt>
+                        <dd>10月26日より募集開始　<a href="./pdf/webdesign.pdf" target="_blank">資料はこちら</a></dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                        <dt>11月開講WEBデザインクリエーター科</dt>
+                        <dd>受付終了</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_entry" id="entry">
+            <div class="section_header">
+                <h2>お申込みについて</h2>
+            </div>
+
+            <div class="entry_first_capiton">
+                <p>
+                当校は求職者支援訓練の認定校です。
+                求職者支援制度を利用しながら受講することも可能ですので、まずはお近くのハローワークにご相談ください。<br>
+                (バナーより厚生労働省のページをご覧いただけます。)
+                </p>
+                <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html" target="_blank">
+                    <img src="./images/kyushhoku-bunner.jpg" alt="求職者支援制度">
+                </a>
+            </div>
+
+            <div class="entry_content_box">
+                <div class="entry_process_box">
+                    <div class="entry_number_box">
+                        <div class="entry_number">
+                            <h3>１</h3>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="entry_textbox js_fadeinIMG3">
+                        <h3>ハローワークにて求職申込・説明を受ける</h3>
+                        <p>お近くのハローワークにて求職申込を行い、求職者支援制度の説明を受けてください。<br>職業訓練受講給付金の受給を希望される方は、その旨担当者にお伝えください。</p>
+                    </div>
+                </div>
+
+                <div class="entry_process_box">
+                    <div class="entry_number_box">
+                        <div class="entry_number">
+                            <h3>２</h3>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="entry_textbox js_fadeinIMG3">
+                        <h3>訓練コースの選択</h3>
+                        <p>ハローワークで職業相談を受けつつ、受講したい訓練を選択します。<br>
+                        受講申込書などの必要書類を受け取ってください。</p>
+                    </div>
+                </div>
+
+                <div class="entry_process_box">
+                    <div class="entry_number_box">
+                        <div class="entry_number">
+                            <h3>３</h3>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="entry_textbox js_fadeinIMG3">
+                        <h3>訓練受講の申し込み</h3>
+                        <p>ハローワークで受講申し込みの手続きを行います。<br>受講申込書に受付印をもらったら、郵送または持参にて当校に提出してください。</p>
+                    </div>
+                </div>
+            
+                <div class="entry_process_box">
+                    <div class="entry_number_box">
+                        <div class="entry_number">
+                            <h3>４</h3>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="entry_textbox js_fadeinIMG3">
+                        <h3>選考会</h3>
+                        <p>指定された日時に当校にて筆記試験と面接を行います。<br>当日は筆記用具をご持参ください。</p>
+                    </div>
+                </div>
+                <div class="entry_process_box">
+                    <div class="entry_number_box">
+                        <div class="entry_number">
+                            <h3>５</h3>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="entry_textbox js_fadeinIMG3">
+                        <h3>合否通知</h3>
+                        <p>「合格」の通知が届いたら「選考結果通知書」をハローワークに提出し、<br>「就職支援計画書」を受け取って下さい。</p>
+                    </div>
+                </div>
+
+                <div class="entry_process_box">
+                    <div class="entry_number_box">
+                        <div class="entry_number">
+                            <h3>６</h3>
+                        </div>
+                    </div>
+                    <div class="entry_textbox js_fadeinIMG3">
+                        <h3>受講開始</h3>
+                        <p>入校式の後、いよいよ訓練が開始します。<br>
+                        頑張りましょう！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_access" id="access">
+            <div class="section_header">
+                <h2>アクセス</h2>
+           </div>
+            <div class="access_box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1416.328371644663!2d141.3544259638149!3d43.04858549151346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23d679%3A0xd35df191aba68757!2z44CSMDY0LTA4MDkg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yZ5p2h6KW_77yT5LiB55uu77yS4oiS77yR77yQIOacreW5jO-8q--8ju-8s-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1698636095760!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="access_textbox">
+                    <h3>住所</h3>
+                    <p>〒064-0809<br>北海道札幌市中央区南９条西３丁目２−１０ 札幌K.Sビル6F<br>札幌市営地下鉄「中島公園」駅より徒歩１分</p>
+                    <h3>TEL</h3>
+                    <p>011-232-5508</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_area">
+            <img src="./images/footer.png" alt="telnumber">
+        </div>
+    </footer>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$('.slider').slick({
+            infinite: true,
+			autoplay: true, // 自動再生
+			autoplaySpeed: 4000,
+			fade: true, // スライドをフェードイン・フェードアウト
+			cssEase: 'linear',// アニメーション
+			speed: 600, // フェードアニメーションの速度設定
+			arrows: false, // 矢印
+			dots: false, // インジケーター
+		});
+	</script>
+    <script src="./mains.js"></script>
+</body>
+
+</html>
